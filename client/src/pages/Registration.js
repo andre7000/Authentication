@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import "../App.css";
+import Card from "../components/Card";
 
 export default function Registration() {
   const [usernameReg, setUsernameReg] = useState("");
@@ -45,6 +46,7 @@ export default function Registration() {
 
   return (
     <div className="App">
+      <Card />
       <div className="registration">
         <h1>Registration</h1>
         <label>Username</label>
